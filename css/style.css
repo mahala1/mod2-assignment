@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:verdana;
+	font-size: 100%¨;
+    background-color: #DCDCDC; }
+h1{
+	font-size:1.75em;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 70px; 
+}
+.container{
+ position: relative;
+ top:60px;
+ margin: 15px;
+}
+ .type{
+  position: relative;
+  top: 0;
+  background-color: grey;
+  margin: 15px;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+.type p{
+  margin-top: 23px;
+  text-align: justify;
+  font-size: 100%;
+}
+/*------ Title Color and Position ------*/
+
+.title{
+  position: absolute;
+  top:0;
+  right: 0px;
+  padding: 6px 90px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#first{
+	background-color:#FC766AFF;
+}
+#second{
+	background-color: #B0B8B4FF;
+}
+#third{
+	background-color: #184A45FF;
+}
+/*-------------------------- Media Queries ---------------------------*/
+
+.row {
+  width: 100%;
+}
+/*------ Desktop View ------*/
+
+@media (min-width: 992px){
+.col-lg-4 {
+    float: left;
+    width: 33.33%;
+    }
+}
+/*------ Tablet View ------*/
+
+@media (min-width: 768px) and (max-width: 991px){
+.col-md-6, .col-md-12{
+	float: left;
+}
+.col-md-6 {
+    width: 50%;
+
+  }
+.col-md-12 {
+    width: 100%;
+  }
+}
+/*------ Mobile View ------*/
+
+@media(max-width: 767px){
+.col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
